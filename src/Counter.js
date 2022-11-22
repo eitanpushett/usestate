@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 function Counter() {
-    const [count, setCount] = useState(1)
-    const [delta, setDelta] = useState(1)
+    const [count, setCount] = useState(0)
+    const [delta, setDelta] = useState(0)
 
     function incr(){
         setCount(
