@@ -26,9 +26,9 @@ function Counter() {
     }
         //console.log(count) useful for debugging
     
-        function handleDelta(e){
-          console.log(e)
-          setDelta(Number(e.target.value))
+        function handleDelta(event){
+          console.log(event)
+          setDelta(Number(event.target.value))
 
         }
 
