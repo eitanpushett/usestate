@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-function Counter() {
+function Counter(props) {
     const [count, setCount] = useState(0)
-    const [delta, setDelta] = useState(0)
-
+    const {delta} = props
     function incr(){
         setCount(
             function(oldCount){
@@ -26,16 +25,11 @@ function Counter() {
     }
         //console.log(count) useful for debugging
     
-        function handleDelta(event){
-          console.log(event)
-          setDelta(Number(event.target.value))
-
-        }
+        
 
     return (
       <div className="counter">
       <h1>React Counter</h1>
-      <input type = "number" value = {delta} onChange = {handleDelta} />
       <span className="counter__output">{count}</span>
       <div className="btn__container">
         <button className="control__btn" onClick={incr}>Click to add {delta} to Counter</button>
