@@ -10,7 +10,7 @@ function App() {
 const [delta, setDelta] = useState(1)
 const [max, setMax] = useState(100)
 const [reset, setReset] = useState(false)
-const [ highest, changeHighest ] = useState(1)
+const [ highest, changeHighest ] = useState(0)
 
 function handleDelta(event){
   console.log(event)
